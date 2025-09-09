@@ -139,9 +139,8 @@ export default function HelloForm() {
           </div>
           <p className="text-xs text-gray-600 mb-4">Form Progress: {Math.round(getFieldProgress())}%</p>
           
-          <p className="text-gray-700 text-lg leading-relaxed max-w-md mx-auto animate-fade-in opacity-80 hover:opacity-100 transition-opacity duration-300">
-            A wonderful serenity has taken possession of my entire soul like
-            these sweet mornings.
+          <p className="text-black text-lg leading-relaxed max-w-md mx-auto animate-fade-in opacity-80 hover:opacity-100 transition-opacity duration-300">
+            Thank you for connect with Oneisok.
           </p>
         </div>
 
@@ -176,7 +175,7 @@ export default function HelloForm() {
                 placeholder="Your Name*"
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black placeholder-gray-500 transition-all duration-300 transform ${
-                  focusedField === 'name' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'name' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('name') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${completedFields.has('name') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -203,7 +202,7 @@ export default function HelloForm() {
                 placeholder="Your Email*"
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black placeholder-gray-500 transition-all duration-300 transform ${
-                  focusedField === 'email' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'email' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('email') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${completedFields.has('email') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -230,7 +229,7 @@ export default function HelloForm() {
                 placeholder="Contact Phone*"
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black placeholder-gray-500 transition-all duration-300 transform ${
-                  focusedField === 'phone' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'phone' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('phone') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${completedFields.has('phone') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -257,7 +256,7 @@ export default function HelloForm() {
                 placeholder="Your Address*"
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black placeholder-gray-500 transition-all duration-300 transform ${
-                  focusedField === 'address' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'address' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('address') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${completedFields.has('address') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -282,7 +281,7 @@ export default function HelloForm() {
                 onBlur={() => setFocusedField('')}
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black appearance-none transition-all duration-300 transform cursor-pointer ${
-                  focusedField === 'service' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'service' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('service') ? 'border-green-400' : ''}`}
               >
                 <option value="">--- Select a Service* ---</option>
@@ -314,7 +313,7 @@ export default function HelloForm() {
                 onBlur={() => setFocusedField('')}
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black appearance-none transition-all duration-300 transform cursor-pointer ${
-                  focusedField === 'budget' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'budget' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('budget') ? 'border-green-400' : ''}`}
               >
                 <option value="">--- Select Project Budget* ---</option>
@@ -376,7 +375,7 @@ export default function HelloForm() {
                 onBlur={() => setFocusedField('')}
                 required
                 className={`w-full px-4 py-3 border-2 rounded-full focus:outline-none bg-white text-black transition-all duration-300 transform ${
-                  focusedField === 'launchDate' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'launchDate' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('launchDate') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${completedFields.has('launchDate') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -403,7 +402,7 @@ export default function HelloForm() {
                 required
                 rows={4}
                 className={`w-full px-4 py-3 border-2 rounded-2xl focus:outline-none bg-white text-black placeholder-gray-500 resize-none transition-all duration-300 transform ${
-                  focusedField === 'comments' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-gray-300 hover:border-[#0e1c7b]/50'
+                  focusedField === 'comments' ? 'border-[#0e1c7b] scale-105 shadow-lg' : 'border-black hover:border-black'
                 } ${completedFields.has('comments') ? 'border-green-400' : ''}`}
               />
               <div className={`absolute right-4 top-4 transition-all duration-300 ${completedFields.has('comments') ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
@@ -427,7 +426,7 @@ export default function HelloForm() {
                 I'm not a robot {!isRobot && '✓'}
               </span>
               <div className="ml-auto">
-                <div className={`w-12 h-12 rounded flex items-center justify-center transition-all duration-300 ${
+                <div className={`w-30 h-12 rounded flex items-center justify-center transition-all duration-300 ${
                   !isRobot ? 'bg-green-500' : 'bg-[#0e1c7b]'
                 }`}>
                   <div className="text-white text-xs font-bold">
